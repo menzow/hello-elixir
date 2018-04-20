@@ -1,0 +1,3 @@
+[submodule "elixir-phoenix-realworld-example-app"]
+	path = elixir-phoenix-realworld-example-app
+	url = https://github.com/gothinkster/elixir-phoenix-realworld-example-app
