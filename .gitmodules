@@ -1,3 +1,6 @@
-[submodule "elixir-phoenix-realworld-example-app"]
-	path = elixir-phoenix-realworld-example-app
-	url = https://github.com/gothinkster/elixir-phoenix-realworld-example-app
+[submodule "app"]
+	path = app
+	url = https://github.com/menzow/elixir-phoenix-realworld-example-app
+[submodule "web"]
+	path = web
+	url = https://github.com/menzow/react-redux-realworld-example-app

@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  app:
+    image: hello-elixir
+    restart: always
+    ports:
+      - 8080:4000
+    
+  db:
+    image: postgres
+    restart: always
+    volumes:
+     - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: hello-elixir # DANGEROUS: You should override the default password. 
+
+volumes:
+  db-data:

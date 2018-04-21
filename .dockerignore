@@ -1,4 +1,6 @@
 _build
 deps
+web/.git
+app/.git
 */node_modules
 test
