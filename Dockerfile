@@ -26,8 +26,6 @@ ENV PORT=4000 MIX_ENV=dev
 ADD app/mix.exs app/mix.lock ./
 RUN mix do deps.get, deps.compile
 
-ADD app/config/dev.exs config/dev.exs
-
 ADD app .
 # Run frontend build, compile, and digest assets
 COPY --from=web-build /opt/web/build ./priv/static
