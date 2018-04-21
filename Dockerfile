@@ -15,6 +15,8 @@ RUN npm run-script build
 
 FROM bitwalker/alpine-elixir-phoenix:latest
 
+WORKDIR /opt/app
+
 # Default database config. Strongly adviced to override
 ENV DATABASE_NAME=postgres DATABASE_USER=postgres DATABASE_PASSWORD=hello-elixir
 
